@@ -79,7 +79,8 @@ td,
 th,
 tr,
 p,
-a {
+a,
+li {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
 }
@@ -94,6 +95,42 @@ h2 {
   font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
+}
+
+.section-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-cell {
+  padding: 16px;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.item-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0 10px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.thumb-cell {
+  padding: 16px;
+  width: 20%;
+  vertical-align: middle;
+}
+
+.detail-cell {
+  padding: 8px;
+  width: 80%;
+  vertical-align: middle;
 }
 
 .papertitle {
@@ -139,4 +176,86 @@ span.highlight {
     padding: 20px;
     display: inline-block;
     border-radius: 10px;
+}
+
+.entry-title {
+  font-weight: 700;
+}
+
+.entry-meta {
+  color: #555;
+  margin-top: 4px;
+}
+
+.profile-card {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #f5f7fb 0%, #e7edf7 100%);
+  border: 1px solid #d8e0ec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.profile-initials {
+  font-size: 44px;
+  font-weight: 700;
+  color: #1d3f65;
+  line-height: 1;
+}
+
+.profile-subtitle {
+  margin-top: 14px;
+  text-align: center;
+  color: #46627e;
+  line-height: 1.45;
+  font-size: 13px;
+}
+
+.thumb {
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
+  background: #edf4f8;
+  color: #1d3f65;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: 0;
+  border: 1px solid #d8e0ec;
+  box-sizing: border-box;
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 700px) {
+  .thumb-cell,
+  .detail-cell {
+    display: block;
+    width: auto;
+  }
+
+  .thumb {
+    width: 100%;
+    height: 96px;
+  }
+
+  .profile-initials {
+    font-size: 34px;
+  }
+
+  .profile-subtitle {
+    font-size: 12px;
+  }
 }
