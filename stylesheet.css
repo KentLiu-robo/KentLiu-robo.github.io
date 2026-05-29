@@ -127,10 +127,48 @@ h2 {
   vertical-align: middle;
 }
 
+.figure-thumb-cell {
+  width: 32%;
+}
+
 .detail-cell {
   padding: 8px;
   width: 80%;
   vertical-align: middle;
+}
+
+.education-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0 10px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.school-logo-cell {
+  padding: 16px;
+  width: 20%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.education-detail-cell {
+  padding: 8px;
+  width: 80%;
+  vertical-align: middle;
+}
+
+.school-logo {
+  max-width: 150px;
+  max-height: 120px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.school-logo-wide {
+  max-width: 180px;
 }
 
 .papertitle {
@@ -187,32 +225,15 @@ span.highlight {
   margin-top: 4px;
 }
 
-.profile-card {
+.profile-photo {
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
-  background: linear-gradient(145deg, #f5f7fb 0%, #e7edf7 100%);
-  border: 1px solid #d8e0ec;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  object-fit: cover;
+  object-position: 50% 24%;
   box-sizing: border-box;
-}
-
-.profile-initials {
-  font-size: 44px;
-  font-weight: 700;
-  color: #1d3f65;
-  line-height: 1;
-}
-
-.profile-subtitle {
-  margin-top: 14px;
-  text-align: center;
-  color: #46627e;
-  line-height: 1.45;
-  font-size: 13px;
+  border: 1px solid #d8e0ec;
+  display: block;
 }
 
 .thumb {
@@ -230,6 +251,15 @@ span.highlight {
   box-sizing: border-box;
 }
 
+.research-figure {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 6px;
+  border: 1px solid #d8e0ec;
+  display: block;
+  box-sizing: border-box;
+}
+
 ul {
   margin-top: 10px;
   padding-left: 20px;
@@ -241,7 +271,9 @@ li {
 
 @media (max-width: 700px) {
   .thumb-cell,
-  .detail-cell {
+  .detail-cell,
+  .school-logo-cell,
+  .education-detail-cell {
     display: block;
     width: auto;
   }
@@ -251,11 +283,16 @@ li {
     height: 96px;
   }
 
-  .profile-initials {
-    font-size: 34px;
+  .research-figure {
+    max-width: 100%;
   }
 
-  .profile-subtitle {
-    font-size: 12px;
+  .profile-photo {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  .school-logo {
+    max-width: 180px;
   }
 }
