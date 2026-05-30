@@ -184,6 +184,18 @@ h2 {
   font-size: 32px;
 }
 
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 14px;
+  margin: 12px 0 18px;
+}
+
+.site-nav a {
+  font-size: 13px;
+}
+
 .one {
   width: 160px;
   height: 160px;
@@ -260,6 +272,19 @@ span.highlight {
   box-sizing: border-box;
 }
 
+.research-thumb {
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.company-logo {
+  width: 160px;
+  height: 96px;
+  padding: 14px;
+  object-fit: contain;
+  background: #fff;
+}
+
 ul {
   margin-top: 10px;
   padding-left: 20px;
@@ -285,6 +310,15 @@ li {
 
   .research-figure {
     max-width: 100%;
+  }
+
+  .research-thumb {
+    max-width: 100%;
+  }
+
+  .company-logo {
+    width: 100%;
+    height: 96px;
   }
 
   .profile-photo {
